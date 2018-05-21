@@ -1,16 +1,16 @@
-# AdHive CI #
+# TeamCity Agent #
 
 This repository for scripts and configuration:
 
 ### This repository for ###
 
-* Dockerfiles for **build-tool**
+* Dockerfiles for
+**build-tool**
     * **teamcity-agent**
-    * teamcity-server
-    * nexus
+
 * docker-compose configurations for configure build tools
     * docker-compose.yml
-        * teamcity-agent
+    * teamcity-agent
     
 * Version 1.0
 * [Learn about docker](https://www.docker.com/)
@@ -31,7 +31,7 @@ This repository for scripts and configuration:
 
 * Build containers **./gradlew docker**
 * Push container to registry **./gradlew dockerPush**
-* Pull container from private registry **docker pull "${nexusUrl}/${project.group}/${jar.baseName}"**
+* Pull container from private registry **docker pull "${nexusUrl}/${project.group}/teamcity-agent"**
 * Run container over docker compose *docker-compose up teamcity-agent -d*
 
 ### Contribution guidelines ###
