@@ -27,7 +27,7 @@ This repository for scripts and configuration:
     * echo "{ "insecure-registries":["$NEXUS_URL"] }">/etc/docker/daemon.json
     * restart docker service
     
-### Build/push/pull/run###
+### Build/push/pull/run ###
 
 * Build containers **./gradlew docker**
 * Push container to registry **./gradlew dockerPush**
